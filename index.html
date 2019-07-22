@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Jogo da Forca</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Jogo da Forca</title>
 </head>
+    <h1>JOGO DA FORCA</h1>
+    <h3>Descubra quais são as palavras ocultas antes do bonequinho ser enforcado!</h3>
 <body>
-    <button class="letra" onclick="tentativa(this)">A</button>
-    <button class="letra" onclick="tentativa(this)">B</button>
-    <button class="letra" onclick="tentativa(this)">C</button>
-    <button class="letra" onclick="tentativa(this)">D</button>
-    <button class="letra" onclick="tentativa(this)">E</button>
-    <button class="letra" onclick="tentativa(this)">F</button>
-    <button class="letra" onclick="tentativa(this)">G</button>
-    <button class="letra" onclick="tentativa(this)">H</button>
-    <button class="letra" onclick="tentativa(this)">I</button>
-    <button class="letra" onclick="tentativa(this)">J</button>
-    <button class="letra" onclick="tentativa(this)">K</button>
-    <button class="letra" onclick="tentativa(this)">L</button>
-    <button class="letra" onclick="tentativa(this)">M</button>
-    <button class="letra" onclick="tentativa(this)">N</button>
-    <button class="letra" onclick="tentativa(this)">O</button>
-    <button class="letra" onclick="tentativa(this)">P</button>
-    <button class="letra" onclick="tentativa(this)">Q</button>
-    <button class="letra" onclick="tentativa(this)">R</button>
-    <button class="letra" onclick="tentativa(this)">S</button>
-    <button class="letra" onclick="tentativa(this)">T</button>
-    <button class="letra" onclick="tentativa(this)">U</button>
-    <button class="letra" onclick="tentativa(this)">V</button>
-    <button class="letra" onclick="tentativa(this)">W</button>
-    <button class="letra" onclick="tentativa(this)">X</button>
-    <button class="letra" onclick="tentativa(this)">Y</button>
-    <button class="letra" onclick="tentativa(this)">Z</button>
+    <main>
+        <h2 id="chances">Você tem 5 chances</h2>
+        <h1 id="palavra"></h1>
+        <div class="letras">
+            <button class="letra" onclick="tentativa(this)">A</button>
+            <button class="letra" onclick="tentativa(this)">B</button>
+            <button class="letra" onclick="tentativa(this)">C</button>
+            <button class="letra" onclick="tentativa(this)">D</button>
+            <button class="letra" onclick="tentativa(this)">E</button>
+            <button class="letra" onclick="tentativa(this)">F</button>
+            <button class="letra" onclick="tentativa(this)">G</button>
+            <button class="letra" onclick="tentativa(this)">H</button>
+            <button class="letra" onclick="tentativa(this)">I</button>
+            <button class="letra" onclick="tentativa(this)">J</button>
+            <button class="letra" onclick="tentativa(this)">K</button>
+            <button class="letra" onclick="tentativa(this)">L</button>
+            <button class="letra" onclick="tentativa(this)">M</button>
+            <button class="letra" onclick="tentativa(this)">N</button>
+            <button class="letra" onclick="tentativa(this)">O</button>
+            <button class="letra" onclick="tentativa(this)">P</button>
+            <button class="letra" onclick="tentativa(this)">Q</button>
+            <button class="letra" onclick="tentativa(this)">R</button>
+            <button class="letra" onclick="tentativa(this)">S</button>
+            <button class="letra" onclick="tentativa(this)">T</button>
+            <button class="letra" onclick="tentativa(this)">U</button>
+            <button class="letra" onclick="tentativa(this)">V</button>
+            <button class="letra" onclick="tentativa(this)">W</button>
+            <button class="letra" onclick="tentativa(this)">X</button>
+            <button class="letra" onclick="tentativa(this)">Y</button>
+            <button class="letra" onclick="tentativa(this)">Z</button>
+        </div>
+        <div>
+            
+            <div id="boneco">
+                <div id="cabeça"><img src="imagens/cabeça.png"></div>
+                <div id="corpo2"><img src="#"></div>
+                <div id="corpo4"><img src="#"></div>
+                <div id="corpo3"><img src="#"></div>
+                <div id="corpo5"><img src="#"></div>
+                <div id="corpo6"><img src="#"></div>
+            </div>
+        </div>
+        <div class="botoes">
+            <button id="novamente" class="btn_novamente" onclick="atualizaPagina()">Jogar Novamente<button>
+            <button id= "dica-on"  class="dica-resposta" onclick="objeto.dica()">Dica</button>
+        </div>
+    </main>
 </body>
+
 </html>

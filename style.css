@@ -1,20 +1,43 @@
-
+body{
+margin: 0;
+padding: 0;
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 header{
-    height: 100px;
-    width: 100vw;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+main {
+    background: black;
+    margin:  15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    border-bottom: 10px double white; 
+}
+h2{
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-    
-.Ajuda{
-    width: 30px;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 5px;
-    color: red;
+#palavra, #letra{
+    color:white;
 }
-    
+#boneco, .botoes{
+    margin:0 auto;
+	margin-top:38px;
+	text-align: center;
+	border:thin solid;
+	width:450px;
+	height:210px;
+}
+.botoes{
+	height:50px;
+}
