@@ -2,17 +2,42 @@ let palavra = "";
 let dica = "";
 const palavras = [
     {
-        palavra: "BANANA",
-        dica: "Fruta amarela"
+        palavra: "MELANCIA",
+        dica: "FRUTA"
     }, 
     { 
-        palavra: 'QWERTY',
-        dica: 'Coisa do teclado'
+        palavra: "CAMELO",
+        dica: "ANIMAL"
     }, 
     {
-        palavra: 'INCONSTITUCIONALISSIMAMENTE',
-        dica: 'Vei, si fudeu'
-    }
+        palavra: "GELADEIRA",
+        dica: "COZINHA"
+    },
+    {
+        palavra: "RUIVO",
+        dica: "CORES"
+    }, 
+    {
+        palavra: "ORTOPEDIA",
+        dica: "PROFISSÃO"
+    },
+    {
+        palavra: "BIQUINI",
+        dica: "PRAIA"
+    },
+    {
+        palavra: "ORQUIDEA",
+        dica: "FLORES"
+    },
+    {
+        palavra: "COMEMORAÇÃO",
+        dica: "NATAL"
+    },
+    {
+        palavra: "CARROÇA",
+        dica: "FAZENDA"
+    },
+   
 ];
 let letrasErradas = []
 let letrasAcertadas = []
@@ -61,13 +86,14 @@ function tentativa(botao) {
         desabilitarBotoes()
         document.getElementById('novamente').disabled = false;
     }
-    for(indice of palavras){
-        console.log(indice)
-        console.log(caracteres)
-        if (indice == caracteres){
-            alert ("PARABÉNS, VOCÊ GANHOU!!")
-        }
+
+    if(caracteres.split("").every(todosLetrasAcertadas)){
+        alert("PARABÉNS, VOCÊ É FODA!!!!!!!!!!!!!!!!!!!!!")
     }
+}
+
+function todosLetrasAcertadas(letra) {
+    return letra !== '_';
 }
 
 function renderizarErro(letra) {
@@ -130,5 +156,6 @@ function atualizaPagina() {
     location.reload();
 }
 
-function gameOver() {
+function renderizarDica() {
+    document.getElementById('dica').innerHTML = "Dica: ".concat(dica);
 }

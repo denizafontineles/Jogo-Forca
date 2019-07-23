@@ -2,15 +2,16 @@
 <html lang="pt-br">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script defer src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <title>Jogo da Forca</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Forca</title>
 </head>
-    <h1>JOGO DA FORCA</h1>
-    <h3>Descubra quais são as palavras ocultas antes do bonequinho ser enforcado!</h3>
+<h1>JOGO DA FORCA</h1>
+<h3>Descubra quais são as palavras ocultas antes do bonequinho ser enforcado!</h3>
+
 <body>
     <main>
         <h2 id="chances">Você tem 5 chances</h2>
@@ -44,7 +45,6 @@
             <button class="letra" onclick="tentativa(this)">Z</button>
         </div>
         <div>
-            
             <div id="boneco">
                 <div id="cabeça"><img src="imagens/cabeça.png"></div>
                 <div id="corpo2"><img src="#"></div>
@@ -54,11 +54,13 @@
                 <div id="corpo6"><img src="#"></div>
             </div>
         </div>
+        <div>
+            <h1 id="dica"></h1>
+        </div>
         <div class="botoes">
             <button id="novamente" class="btn_novamente" onclick="atualizaPagina()">Jogar Novamente<button>
-            <button id= "dica-on"  class="dica-resposta" onclick="objeto.dica()">Dica</button>
+                    <button id="dica-on" class="dica-resposta" onclick="renderizarDica()">Dica</button>
         </div>
     </main>
 </body>
-
 </html>
